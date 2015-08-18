@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipodificultad">
+        <item>Fácil</item>
+        <item>Medio</item>
+        <item>Dificil</item>
+        <item>Muy Dificil</item>
+    </string-array>
+    <string-array
+        name="valorestipodificultad">
+        <item>facil</item>
+        <item>medio</item>
+        <item>dificil</item>
+        <item>muydificil</item>
+    </string-array>
+</resources>

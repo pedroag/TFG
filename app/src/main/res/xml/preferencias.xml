@@ -1,0 +1,42 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+    android:title="@string/dificultades">
+
+        <ListPreference
+        android:title="@string/elecciondificultad"
+        android:key="dif"
+        android:entries="@array/tipodificultad"
+        android:entryValues="@array/valorestipodificultad"
+        android:defaultValue="facil">
+
+        </ListPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Vibracion">
+
+        <CheckBoxPreference
+            android:key="vib"
+            android:title="Vibración activada"
+            android:defaultValue="true">
+
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Sonido">
+
+        <CheckBoxPreference
+            android:key="son"
+            android:title="Efectos de sonido y música"
+            android:defaultValue="true">
+
+        </CheckBoxPreference>
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>

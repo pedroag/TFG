@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.appspedro.pedro.tfg.ResultadoBatalla"
+    android:background="#87000000">
+
+    <TextView android:text="@string/resultado_batalla" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="35sp"
+        android:textIsSelectable="true"
+        android:id="@+id/fsdf" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/jugador1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="97dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/jugador2"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/jugador1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/resultado1"
+        android:id="@+id/resultado1"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/jugador1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/resultado2"
+        android:id="@+id/resultado2"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/jugador2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ganador"
+        android:id="@+id/textoGanador"
+        android:layout_below="@+id/resultado2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:textSize="35sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ganador"
+        android:id="@+id/ganador"
+        android:layout_below="@+id/textoGanador"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/repetir"
+        android:id="@+id/repetir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/botones_menu" />
+
+    <Button
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:text="@string/salir"
+        android:id="@+id/salir"
+        android:layout_alignBottom="@+id/repetir"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/botones_menu" />
+
+</RelativeLayout>

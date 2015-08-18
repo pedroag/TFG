@@ -1,0 +1,285 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.appspedro.pedro.tfg.PantallaPerfil"
+    android:id="@+id/pantallaPerfil"
+    android:visibility="visible"
+    android:background="#87000000">
+
+    <com.facebook.login.widget.ProfilePictureView
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:id="@+id/fotoperfil"
+        android:background="@drawable/aproximaciones"
+        />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:layout_alignTop="@+id/fotoperfil"
+        android:layout_toEndOf="@+id/fotoperfil"
+        android:layout_marginLeft="30dp"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/mejorpuntuacion"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/partidas"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/fecha_registro"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/mejorpuntuacion"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/partidas"
+        android:layout_below="@+id/fotoperfil"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/fecha_ultima"
+        android:layout_marginLeft="10dp"
+        android:layout_alignTop="@+id/partidas_ganadas"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nivel"
+        android:layout_below="@+id/nombre"
+        android:layout_alignStart="@+id/nombre" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:id="@+id/partidas_ganadas"
+        android:layout_below="@+id/partidas"
+        android:layout_alignParentStart="true" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/partidas_ganadas"
+        android:layout_alignParentStart="true"
+        android:id="@+id/scrollView2">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#05ffdafa"
+        android:id="@+id/tablaretos"
+        android:layout_marginTop="10dp">
+
+        <TableRow android:gravity="center"
+            android:background="#f6ff74">
+
+            <TextView
+                android:text="@string/retos"
+                android:id="@+id/retos"
+                android:gravity="center"
+                android:textSize="25dp"
+                android:background="#f6ff74"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/reto1partida"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto1"
+                android:text="Has jugado tu primera partida"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor1"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/reto10partidas"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto2"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto2"
+                android:text="Has jugado 10 partidas"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor2"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/reto1jugada"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto3"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto3"
+                android:text="Ganaste en la primera jugada"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor3"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/reto1minuto"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto4"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto4"
+                android:text="Ganaste en menos de 1 minuto"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor4"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/retoamateur"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto5"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto5"
+                android:text="Has alcanzado el nivel AMATEUR"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor5"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/retoprofesional"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto6"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto6"
+                android:text="Has alcanzado el nivel PROFESIONAL"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+
+        <View
+            android:id="@+id/Divisor6"
+            android:layout_height="2dp"
+            android:layout_width="fill_parent"
+            android:background="#FFFFFF" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/retoexperto"
+            android:background="#ffffff">
+
+            <ImageView
+                android:id="@+id/foto7"
+                android:background="@drawable/ic_verified_user_black_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/reto7"
+                android:text="Has alcanzado el nivel EXPERTO"
+                android:layout_span="1"
+                android:textStyle="italic"
+                android:textSize="15dp" />
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+</RelativeLayout>

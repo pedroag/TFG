@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="Muisca">
+        <item name="android:background">@xml/toggle_musica</item>
+    </style>
+
+
+</resources>

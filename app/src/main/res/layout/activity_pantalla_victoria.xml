@@ -1,0 +1,145 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.appspedro.pedro.tfg.PantallaVictoria"
+    android:elevation="0dp"
+    android:background="#87000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enhorabuena"
+        android:id="@+id/Enhorabuena"
+        android:layout_marginTop="124dp"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:textColor="#ffffd14c"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/idusuario"
+        android:layout_below="@+id/Enhorabuena"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="180dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:id="@+id/manoGanadora"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:visibility="visible"
+        android:layout_below="@+id/idusuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="#00ffffff">
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Boton1"
+            android:background="@drawable/ficha_azul"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:enabled="false" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Boton2"
+            android:background="@drawable/ficha_roja"
+            android:enabled="false"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Boton3"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Boton3"
+            android:background="@drawable/ficha_amarilla"
+            android:enabled="false"
+            android:layout_marginLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/Boton1" />
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/Boton4"
+            android:background="@drawable/ficha_verde"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:enabled="false" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tiempo:"
+        android:id="@+id/textTiemo"
+        android:textSize="25dp"
+        android:layout_below="@+id/manoGanadora"
+        android:layout_alignStart="@+id/manoGanadora"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jugadas:"
+        android:id="@+id/textJugadas"
+        android:textSize="25dp"
+        android:layout_below="@+id/textTiemo"
+        android:layout_alignStart="@+id/textTiemo"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textTiempoFinal"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/textTiemo"
+        android:layout_alignEnd="@+id/manoGanadora" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textJugadasFinal"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/textJugadas"
+        android:layout_alignStart="@+id/textTiempoFinal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Salir"
+        android:id="@+id/BotonSalir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/botones_menu" />
+
+    <com.facebook.share.widget.ShareButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Compartir"
+        android:id="@+id/compartir"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView32"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/individual" />
+</RelativeLayout>

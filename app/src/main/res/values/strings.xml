@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">TFG</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="reanuda_musica">Reanuda música</string>
+    <string name="para_musica">Para música</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="tituloentrada">Bienvenido a la mejor aplicación</string>
+    <string name="salir">Salir</string>
+    <string name="boton1jugador">Individual</string>
+    <string name="Puntuaciones">Puntuaciones</string>
+    <string name="botonAjustes">Ajustes</string>
+    <string name="title_activity_juego1">juego1</string>
+    <string name="action_settings">Settings</string>
+    <string name="INICIO">New Button</string>
+    <string name="botoninicio">INICIO</string>
+    <string name="title_activity_pantalla_victoria">PantallaVictoria</string>
+    <string name="dificultades">Dificultad</string>
+    <string name="elecciondificultad">Elige dificultdad</string>
+    <string name="title_activity_ajustes">Ajustes</string>
+    <string name="facebook_app_id">1607413832844851</string>
+    <string name="title_activity_perfil">Perfil</string>
+    <string name="title_activity_seleccion_combinacion">SeleccionCombinacion</string>
+    <string name="title_activity_resultado_batalla">ResultadoBatalla</string>
+    <string name="title_activity_derrota">Derrota</string>
+    <string name="resultado_batalla">Resultado Batalla:</string>
+    <string name="ganador">Ganador:</string>
+    <string name="batalla">Batalla</string>
+    <string name="repetir">REPETIR</string>
+    <string name="resultado1">resultado1</string>
+    <string name="resultado2">resultado2</string>
+    <string name="retos">RETOS</string>
+    <string name="elige_combinacion">Elige combinación:</string>
+
+</resources>

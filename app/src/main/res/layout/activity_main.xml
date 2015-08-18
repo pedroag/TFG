@@ -1,0 +1,105 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.appspedro.pedro.tfg.MainActivity"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:background="#87000000">
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:id="@+id/imagenPortada"
+        android:layout_gravity="center"
+        android:background="@drawable/imagen_menu"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/boton1jugador"
+        android:id="@+id/boton1jugador"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="@drawable/botones_menu"
+        android:layout_below="@+id/imagenPortada"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/batalla"
+        android:id="@+id/batalla"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:background="@drawable/botones_menu"
+        android:layout_alignStart="@+id/boton1jugador"
+        android:layout_below="@+id/boton1jugador"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="@string/botonAjustes"
+        android:id="@+id/botonajustes"
+        android:layout_gravity="center_horizontal"
+        android:textStyle="bold"
+        android:capitalize="none"
+        android:background="@drawable/botones_menu"
+        android:layout_below="@+id/batalla"
+        android:layout_alignStart="@+id/batalla"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:text="PERFIL"
+        android:id="@+id/botonPerfil"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        android:enabled="true"
+        android:textStyle="bold"
+        android:background="@drawable/botones_menu"
+        android:layout_below="@+id/botonajustes"
+        android:layout_alignStart="@+id/botonajustes" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        fb:com_facebook_login_text="Iniciar con Facebook"
+        fb:com_facebook_logout_text="Cerrar sesión"
+        android:layout_below="@+id/botonPerfil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sesion no iniciada"
+        android:id="@+id/estadoSesion"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ToggleButton
+        style="@style/Muisca"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/musica"
+        android:layout_gravity="right"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
