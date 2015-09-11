@@ -4,70 +4,27 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.appspedro.pedro.tfg.ResultadoBatalla"
+    tools:context="com.appspedro.pedro.tfg.PantallaResultadoBatalla"
     android:background="#87000000">
-
-    <TextView android:text="@string/resultado_batalla" android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:textSize="35sp"
-        android:textIsSelectable="true"
-        android:id="@+id/fsdf" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/jugador1"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="97dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:id="@+id/jugador2"
-        android:layout_marginTop="77dp"
-        android:layout_below="@+id/jugador1"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/resultado1"
-        android:id="@+id/resultado1"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/jugador1" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="@string/resultado2"
-        android:id="@+id/resultado2"
-        android:layout_centerHorizontal="true"
-        android:layout_alignTop="@+id/jugador2" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ganador"
         android:id="@+id/textoGanador"
-        android:layout_below="@+id/resultado2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:layout_marginBottom="74dp"
+        android:layout_above="@+id/repetir"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ganador"
         android:id="@+id/ganador"
-        android:layout_below="@+id/textoGanador"
+        android:layout_alignTop="@+id/textoGanador"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="39dp" />
+        android:layout_marginTop="52dp" />
 
     <Button
         android:layout_width="125dp"
@@ -86,5 +43,62 @@
         android:layout_alignBottom="@+id/repetir"
         android:layout_alignParentEnd="true"
         android:background="@drawable/botones_menu" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView26"
+        android:background="@drawable/batalla"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="175dp"
+        android:id="@+id/marcoResultados"
+        android:background="@drawable/marco_letrero"
+        android:layout_marginBottom="70dp"
+        android:layout_above="@+id/textoGanador"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado1"
+            android:id="@+id/resultado1"
+            android:layout_marginRight="20dp"
+            android:textSize="20dp"
+            android:layout_below="@+id/jugador1"
+            android:layout_alignStart="@+id/jugador1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/resultado2"
+            android:id="@+id/resultado2"
+            android:layout_marginBottom="27dp"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/jugador2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jugador1"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/jugador2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/jugador2"
+            android:layout_marginStart="19dp"
+            android:textSize="20dp"
+            android:layout_above="@+id/resultado2"
+            android:layout_alignParentStart="false" />
+
+    </RelativeLayout>
 
 </RelativeLayout>

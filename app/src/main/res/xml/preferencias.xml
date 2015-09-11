@@ -1,7 +1,7 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
     <PreferenceCategory
-    android:title="@string/dificultades">
+    android:title="Dificultad modo Invitado">
 
         <ListPreference
         android:title="@string/elecciondificultad"
@@ -9,7 +9,19 @@
         android:entries="@array/tipodificultad"
         android:entryValues="@array/valorestipodificultad"
         android:defaultValue="facil">
+        </ListPreference>
 
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Dificultad modo Batalla">
+
+        <ListPreference
+            android:title="Elige el número de colores"
+            android:key="difB"
+            android:entries="@array/numerocolores"
+            android:entryValues="@array/valoresnumerocolores"
+            android:defaultValue="6">
         </ListPreference>
 
     </PreferenceCategory>

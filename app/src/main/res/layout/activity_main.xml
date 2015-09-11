@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.appspedro.pedro.tfg.MainActivity"
+    tools:context="com.appspedro.pedro.tfg.PantallaMenuPrincipal"
     android:weightSum="1"
     android:orientation="vertical"
     android:background="#87000000">
@@ -83,7 +83,8 @@
         fb:com_facebook_logout_text="Cerrar sesión"
         android:layout_below="@+id/botonPerfil"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="42dp" />
+        android:layout_marginTop="42dp"
+        android:visibility="visible" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -100,6 +101,8 @@
         android:id="@+id/musica"
         android:layout_gravity="right"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:textOff=" "
+        android:textOn=" " />
 
 </RelativeLayout>

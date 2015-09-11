@@ -23,7 +23,9 @@
         android:layout_alignTop="@+id/fotoperfil"
         android:layout_toEndOf="@+id/fotoperfil"
         android:layout_marginLeft="30dp"
-        android:textSize="30dp" />
+        android:textSize="25dp"
+        android:background="@drawable/marco_retos"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="100dp"
@@ -31,7 +33,9 @@
         android:id="@+id/mejorpuntuacion"
         android:layout_marginLeft="10dp"
         android:layout_alignTop="@+id/partidas"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/marco_letrero"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="100dp"
@@ -39,15 +43,19 @@
         android:id="@+id/fecha_registro"
         android:layout_marginLeft="10dp"
         android:layout_alignTop="@+id/mejorpuntuacion"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/marco_letrero"
+        android:gravity="center" />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="100dp"
         android:layout_height="50dp"
         android:id="@+id/partidas"
         android:layout_below="@+id/fotoperfil"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="33dp" />
+        android:layout_marginTop="33dp"
+        android:background="@drawable/marco_letrero"
+        android:gravity="center" />
 
     <TextView
         android:layout_width="100dp"
@@ -55,28 +63,36 @@
         android:id="@+id/fecha_ultima"
         android:layout_marginLeft="10dp"
         android:layout_alignTop="@+id/partidas_ganadas"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/marco_letrero"
+        android:gravity="center" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
         android:id="@+id/nivel"
-        android:layout_below="@+id/nombre"
-        android:layout_alignStart="@+id/nombre" />
+        android:background="@drawable/marco_letrero"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/fotoperfil"
+        android:layout_alignStart="@+id/nombre"
+        android:textSize="15dp" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
         android:id="@+id/partidas_ganadas"
         android:layout_below="@+id/partidas"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:background="@drawable/marco_letrero"
+        android:gravity="center" />
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/partidas_ganadas"
         android:layout_alignParentStart="true"
-        android:id="@+id/scrollView2">
+        android:id="@+id/scrollView2"
+        android:layout_marginTop="15dp">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -86,14 +102,14 @@
         android:layout_marginTop="10dp">
 
         <TableRow android:gravity="center"
-            android:background="#f6ff74">
+            android:background="@drawable/marco_letrero">
 
             <TextView
                 android:text="@string/retos"
                 android:id="@+id/retos"
                 android:gravity="center"
                 android:textSize="25dp"
-                android:background="#f6ff74"
+                android:background="#00f6ff74"
                 android:textStyle="bold" />
 
         </TableRow>
@@ -103,7 +119,7 @@
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/reto1partida"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto"
@@ -119,18 +135,12 @@
                 android:textSize="15dp" />
         </TableRow>
 
-        <View
-            android:id="@+id/Divisor1"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
-            android:id="@+id/reto10partidas"
-            android:background="#ffffff">
+            android:id="@+id/retoultimajugada"
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto2"
@@ -140,24 +150,18 @@
 
             <TextView
                 android:id="@+id/reto2"
-                android:text="Has jugado 10 partidas"
+                android:text="Has ganado en la última jugada"
                 android:layout_span="1"
                 android:textStyle="italic"
                 android:textSize="15dp" />
         </TableRow>
-
-        <View
-            android:id="@+id/Divisor2"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/reto1jugada"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto3"
@@ -173,18 +177,12 @@
                 android:textSize="15dp" />
         </TableRow>
 
-        <View
-            android:id="@+id/Divisor3"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/reto1minuto"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto4"
@@ -200,18 +198,12 @@
                 android:textSize="15dp" />
         </TableRow>
 
-        <View
-            android:id="@+id/Divisor4"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/retoamateur"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto5"
@@ -227,18 +219,12 @@
                 android:textSize="15dp" />
         </TableRow>
 
-        <View
-            android:id="@+id/Divisor5"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/retoprofesional"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto6"
@@ -254,18 +240,12 @@
                 android:textSize="15dp" />
         </TableRow>
 
-        <View
-            android:id="@+id/Divisor6"
-            android:layout_height="2dp"
-            android:layout_width="fill_parent"
-            android:background="#FFFFFF" />
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:visibility="gone"
             android:id="@+id/retoexperto"
-            android:background="#ffffff">
+            android:background="@drawable/marco_retos">
 
             <ImageView
                 android:id="@+id/foto7"

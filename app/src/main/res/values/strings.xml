@@ -31,5 +31,9 @@
     <string name="resultado2">resultado2</string>
     <string name="retos">RETOS</string>
     <string name="elige_combinacion">Elige combinación:</string>
+    <string name="colores">Colores:</string>
+    <string name="inicio">INICIO</string>
+    <string name="ronda">RONDA</string>
+    <string name="tiempo">Tiempo:</string>
 
 </resources>

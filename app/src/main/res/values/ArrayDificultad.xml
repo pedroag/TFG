@@ -6,11 +6,23 @@
         <item>Dificil</item>
         <item>Muy Dificil</item>
     </string-array>
+
     <string-array
         name="valorestipodificultad">
         <item>facil</item>
         <item>medio</item>
         <item>dificil</item>
         <item>muydificil</item>
+    </string-array>
+
+    <string-array name="numerocolores">
+        <item>6 colores</item>
+        <item>8 colores</item>
+    </string-array>
+
+    <string-array
+        name="valoresnumerocolores">
+        <item>6</item>
+        <item>8</item>
     </string-array>
 </resources>
